@@ -10,8 +10,9 @@
 
 ### 指针与 const
 
-1.常指针 char _ const a; 2.指向 const 对象的指针 const char _ a 等价于 char const _ a 3.指向 const 对象的常指针 const char _ const a
-注意 不能使用 void _指针保存 const 对象的地址，如果要使用必须使用 const void _
+1.常指针 char _ const a; 
+2.指向 const 对象的指针 const char _ a 等价于 char const _ a 3.指向 const 对象的常指针 const char _ const a
+注意 不能使用 void _指针保存 const 对象的地址，如果要使用必须使用 const void *
 补充：void *指针不能直接解引用，需要先进行类型转换，void *指针可以指向任何数据类型，主要用于泛型编程和内存管理函数等。
 
 ### 函数与 const
